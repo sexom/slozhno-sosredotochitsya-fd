@@ -2,3 +2,15 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+
+:root {
+  /* --accent-color: #FF0070; */
+  --font-size-paragraph: 1,125em;
+  --font-weight-paragraph: 1em;
+  --font-lh-paragraph: 1em;
+  --font-size-h1: 7.25em;
+  --font-weight-h1: 1.75em;
+  --font-lh-h1: 5.98em;
+  --font-lh-main: 1,46em;
+}
