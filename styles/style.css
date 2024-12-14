@@ -1,5 +1,186 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-paragraph);
+  padding-inline: var(--padding-body);
+  background-image: var(--cover-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+/* ДЕКОРАЦИЯ REC */
+.header {
+  position: relative;
+  display: grid;
+  block-size: 668px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  container-type: inline-size;
+}
+
+@container (width >= 768px) {
+  .header {
+    block-size: 1024px;
+  }
+}
+
+.header__decoration {
+  display: grid;
+  grid-row: 1;
+  position: absolute;
+  right: 0;
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  block-size: 9px;
+  inline-size: 9px;
+  margin-block-start: 24px;
+  box-shadow: 0px 0px 7px 4px var(--accent-color);
+  margin-inline-end: 20px;
+}
+
+.header__decoration::after {
+  color: transparent;
+  content: '......';
+  border: 1px solid var(--accent-color);
+  border-left: transparent;
+  border-bottom: transparent;
+  margin-inline-start: -8px;
+  block-size: 25px;
+  position: absolute;
+  top: -10px;
+}
+
+.header__decoration::before {
+  content: 'REC';
+  color: var(--accent-color);
+  font-size: var(--font-size-decoration);
+  display: flex;
+  position: absolute;
+  right: var(--padding-body);
+  margin-inline-end: 10px;
+  margin-block-start: -4px;
+}
+
+  /* МЕНЮ */
+
+.header__theme-menu {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: flex-end;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  padding-inline: 13px;
+}
+
+.header__theme-menu-item:last-child {
+  border: 1px solid var(--accent-color);
+}
+
+@container (width >= 768px) {
+  .header__theme-menu {
+
+    padding-block-start: 146px;
+  }
+}
+
+  /* ТАЙТЛ */
+
+.header__title {
+  grid-row: 3;
+  font-size: 116px;
+  font-weight: bold;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  padding-block-start: 65px; 
+}
+
+.header__line {
+  display: block;
+  line-height: 5.98rem;
+}
+
+@container (width >= 768px) {
+  .header__title {
+    display: flex;
+    gap: 55px;
+    padding-block-start: 173px; 
+    padding-block-end: 163px;
+  }
+}
+
+  /* САБТАЙТЛ */
+
+  .header__subtitle {
+    display: grid;
+    justify-content: flex-end;
+    grid-column: 1;
+    grid-row: 4;
+    border: none;
+    margin-block-start: 55px;
+    margin-block-end: 66px;
+    max-inline-size: 491px;
+    max-block-size: 117px; 
+  }
+
+  @container (width >= 768px) {
+    .header__subtitle {
+      grid-column: 2;
+    }
+  }
+
+  .header__subtitle p {
+    min-inline-size: 20rem;
+  }
+
+  .header__subtitle::after {
+    color: transparent;
+    content: '......';
+    border: 1px solid var(--accent-color);
+    block-size: 25px;
+    position: absolute;
+    bottom: 10px;
+    border-right: transparent;
+    border-top: transparent;
+  }
+
+  @container (width >= 768px) {
+    .header__subtitle::after {
+      grid-row: 2 / 1;
+      block-size: 25px;
+    }
+  }
+
+/* .header__subtitle::after {
+  color: transparent;
+  content: '.';
+  border: 1px solid var(--accent-color);
+  
+  border-right: transparent;
+  border-top: transparent;
+  align-items: center;
+} */
+
+  /* MAIN */
+  /* FAQ */
+
+  .faq {
+
+  }

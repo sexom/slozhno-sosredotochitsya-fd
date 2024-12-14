@@ -7,8 +7,8 @@
 }
 
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
+  min-inline-size: 23,43rem;
+  max-inline-size: 64rem;
   margin: 0 auto;
 }
 
@@ -39,4 +39,12 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  line-height: var(--font-lh-paragraph);
+  font-weight: bold;
+  color: #000;
+  word-spacing: 0.5rem;
 }

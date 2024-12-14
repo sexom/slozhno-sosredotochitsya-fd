@@ -5,12 +5,16 @@
 
 
 :root {
-  /* --accent-color: #FF0070; */
-  --font-size-paragraph: 1,125em;
-  --font-weight-paragraph: 1em;
-  --font-lh-paragraph: 1em;
-  --font-size-h1: 7.25em;
-  --font-weight-h1: 1.75em;
-  --font-lh-h1: 5.98em;
-  --font-lh-main: 1,46em;
+  --font-family-main: 'IBM Plex mono', sans-serif;
+  --accent-color: #FF0070; 
+  --font-size-paragraph: 1.125rem;
+  --font-weight-paragraph: 1rem;
+  --font-lh-paragraph: 1,46rem;
+  --font-size-h1: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-weight-h1: 1.75rem;
+  --font-lh-h1: clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem);
+  --font-lh-main: 1,46rem;
+  --font-size-decoration: 1.125rem;
+  --font-lh-decoration: 1.56rem;
+  --padding-body: 10px;
 }
