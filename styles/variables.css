@@ -16,5 +16,11 @@
   --font-lh-main: 1,46rem;
   --font-size-decoration: 1.125rem;
   --font-lh-decoration: 1.56rem;
+
   --padding-body: 10px;
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --font-color: #F1B2CE;
+  --font-title-color: #DB00FF;
+  --cover-image: url(../images/cover-image-dark.png);
 }

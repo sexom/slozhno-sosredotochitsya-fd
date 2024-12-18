@@ -5,11 +5,6 @@
 */
 
 :root.theme-dark {
-  --accent-color: #FF0070;
-  --bg-color: #000028;
-  --font-color: #F1B2CE;
-  --font-title-color: #DB00FF;
-  --cover-image: url(../images/cover-image-dark.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -20,5 +15,6 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   .header__title {
     color: var(--font-title-color);
+    
   }
 }
