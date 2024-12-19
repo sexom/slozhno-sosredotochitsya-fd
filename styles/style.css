@@ -13,7 +13,7 @@
 /* ДЕКОРАЦИЯ REC */
 .header {
   position: relative;
-  grid-template-columns: 1fr auto;
+  /* grid-template-columns: 1fr auto; */
   /* min-block-size: 668px; */
   container-type: inline-size;
   background-image: var(--cover-image);
@@ -38,23 +38,19 @@
 }
 
 .decorated-zone::before {
-  
   border: 1px solid var( --accent-color);
   border-bottom: transparent;
   border-left: transparent;
   top: 10px;
   right: var(--padding-body);
-
 }
 
 .decorated-zone::after {
-
   border: 1px solid var( --accent-color);
   border-top: transparent;
   border-right: transparent;
   bottom: 10px;
-  left: 10px;
-
+  left: 20px;
 }
 
 .header__decoration {
@@ -86,7 +82,7 @@
   }
 
   .decorated-zone::after {
-    left: calc(var(--padding-body) + 10px);
+    left: 1000px;
     bottom: calc(var(--padding-body) + 10px);
   }
 
@@ -98,12 +94,26 @@
   .header__decoration::after {
     top: 28px;
   }
+
 }
 
 @media (width >= 1024px) {
+  .decorated-zone::before {
+    right: 20px;
+    top: 20px;
+  }
+  
   .decorated-zone::after {
-    left: 10px;
-    bottom: 10px;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .header__decoration {
+    padding-inline-end: 50px;
+  }
+
+  .header__decoration::after {
+    right: 30px;
   }
 
 }
@@ -157,6 +167,24 @@
   }
 }
 
+@media (width >= 1024px) {
+  .header__theme-menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: -24px;
+    margin-left: 9px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__theme-menu-item:last-child {
+    height: 26px;
+  }
+}
+
   /* ТАЙТЛ */
 
 .header__title {
@@ -181,6 +209,15 @@
     display: flex;
     gap: 80px;
     block-size: 271px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__title {
+    block-size: 237px;
+    margin-block-start: -103px;
+    font-size: 157px;
+    gap: 107px;
   }
 }
 
@@ -217,14 +254,25 @@
     padding-inline-end: 10px;
     /* margin-block-end: 105px; */
     margin-block-end: 115px;
-
   }
   .header__subtitle-question {
     grid-column: 2;
     padding-block-start: 2px;
     margin-inline-start: 10px;
     word-spacing: 4px;
-    
+  }
+}
+
+@media (width >= 1024px) {
+  .header__subtitle {
+    padding-inline-end: 3px;
+    block-size: 145px;
+  }
+
+  .header__subtitle-question {
+    block-size: 71px;
+    inline-size: 491px;
+    margin-inline-start: 14px;
   }
 }
 
