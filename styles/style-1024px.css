@@ -1,0 +1,127 @@
+@media (width >= 1024px) {
+  .header__decoration::before {
+    content: 'REC';
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+
+  .header__theme-menu {
+    justify-content: center;
+    grid-row: 1;
+    padding-block-start: 20px;
+    block-size: 135px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+  
+  .header__theme-menu-item:last-child {
+    padding-top: 2px;
+  }
+
+  .header__title {
+    block-size: 212px; 
+    font-size: 157px;
+    word-spacing: 20px;
+    letter-spacing: 3px;
+  }
+
+  .header__subtitle {
+    block-size: 220px;
+  }
+
+  .header__subtitle-question {
+    block-size: 71px;
+    inline-size: 491px;
+  }
+
+  .header__subtitle-question p {
+    word-spacing: 3px;
+  }
+
+  /* main */
+
+  .main {
+    padding-block-start: 40px;
+  }
+
+  /* faq */
+
+  .faq__section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.52fr 1fr;
+    padding-block-start: 30px;
+  }
+
+  .faq__section:first-of-type
+  .faq__question {
+    inline-size:306px;
+    word-spacing: 0px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__question {
+    inline-size: 306px; 
+  }
+
+  .faq__section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__question {
+    block-size: 52px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__answer:nth-of-type(1) {
+    grid-column: 1;
+    margin: 0px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__answer:nth-child(3) {
+    margin: 0;
+  }
+
+
+  .faq__section:nth-child(3){
+    display: grid;
+    grid-template-columns: 0.52fr 1fr;
+    padding-block-start: 10px;
+  }
+
+  .faq__section:nth-child(3)
+  .faq__question {
+    inline-size: 336px;
+    
+  }
+
+  .faq__section:nth-child(3)
+  .faq__title {
+    margin-block-start: -6px;
+  }
+
+  /* gallery */
+
+  .gallery__list {
+    grid-template-rows: repeat(3, min-content);
+    gap: 17px;
+  }
+
+  .gallery__item:nth-child(5) {
+    grid-area: street;
+    block-size: 425px;
+  }
+
+  /* footer */
+
+  .footer {
+    min-block-size: 774px;
+    /* font-size: 20rem; */
+  }
+}

@@ -5,22 +5,26 @@
 
 
 :root {
-  --font-family-main: 'IBM Plex mono', sans-serif;
-  --accent-color: #FF0070; 
-  --font-size-paragraph: 1.125rem;
+  --font-family-main: 'IBM Plex mono', monospace;
+  --font-size-paragraph: 18px;
   --font-weight-paragraph: 1rem;
-  --font-lh-paragraph: 1,46rem;
-  --font-size-h1: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --font-weight-h1: 1.75rem;
+  --font-line-height: 23.4px;
+  --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-lh-h1: clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem);
   --font-lh-main: 1,46rem;
   --font-size-decoration: 1.125rem;
   --font-lh-decoration: 1.56rem;
-
-  --padding-body: 10px;
-  --accent-color: #FF0070;
+  
+  --accent-color: #FF0070; 
+  --active-color: #FF0070;
+  --menu-color: #FF0070;
   --bg-color: #000028;
   --font-color: #F1B2CE;
+  --menu-item-hover-color: #660045;
+  --menu-item-focus-color: #660045;
+  --link-focus-color: #fff;
   --font-title-color: #DB00FF;
   --cover-image: url(../images/cover-image-dark.png);
+
+  --decorated-zone-padding-bottom: 20px;
 }

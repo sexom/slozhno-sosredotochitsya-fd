@@ -1,0 +1,190 @@
+@media (width >= 768px) {
+
+  .decorated-zone::before {
+    left: 20px;
+    bottom: var(--decorated-zone-padding-bottom);
+  }
+
+  .decorated-zone:nth-of-type(2) {
+    --decorated-zone-padding-bottom: 20px;
+  }
+  
+  .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .header__decoration {
+    padding-block-start: 21px;
+    padding-inline-end: 48px;
+    font-size: 20px;
+    block-size: 191px;
+  }
+  
+  .header__decoration::after {
+    top: 28px;
+    right: 30px;
+  }
+
+  .header__decoration::before {
+    content: 'REC';
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+
+  /* Меню */
+  
+  .header__theme-menu {
+    block-size: 265px;
+    padding-inline-end: 10px;
+  }
+
+  .header__theme-menu-item:last-child {
+    margin-block-start: -2px;
+  }
+  
+
+  /* title */
+
+  .header__title {
+    word-spacing: 13px;
+    letter-spacing: 2px;
+  }
+
+
+  /* subtitle */
+
+  .header__subtitle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block-start: 25px;
+    block-size: 325px;
+  }
+
+  .header__subtitle-question {
+    grid-column: 2;
+    width: 364px;
+    height: 117px;
+  }
+  .header__subtitle-question p {
+    margin-inline-end: 20px;
+    word-spacing: 4px;
+  }
+
+  /* main */
+
+  .main {
+    padding-block-start: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+  }
+
+  /* faq */
+
+  .faq {
+    padding-inline: 10px;
+  }
+
+  .faq__section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
+    padding-block-start: 30px;
+  }
+  
+  .faq__section:first-of-type
+  .faq__question {
+    inline-size: 236px;
+  }
+
+  .faq__section:first-of-type
+  .faq__answer {
+    grid-column: 2;
+  }
+
+  .faq__section:nth-of-type(2) {
+    padding-block-start: 30px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__question {
+    inline-size: 136px; 
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__answer:nth-child(1) {
+    margin-block-start: 20px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__answer:nth-child(2) {
+    margin-block-start: 30px;
+  }
+
+  .faq__section:nth-of-type(2)
+  .faq__answer:nth-child(3) {
+    margin-block-start: -4px;
+  }
+
+  .faq__section:nth-child(3){
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
+    padding-block-start: 26px;
+  }
+
+  .faq__section:nth-child(3)
+  .faq__question {
+    inline-size: 236px;
+  }
+
+  .faq__section:nth-child(3)
+  .faq__answer {
+    grid-column: 2;
+  }
+
+  /* gallery */
+  
+  .gallery {
+    padding-block-start: 30px;
+  }
+
+  .gallery__list {
+    padding-block-start: 19px;
+    padding-block-end: 20px;
+    grid-template-areas: 
+    "sunset sunset icecream"
+    "tape books icecream"
+    "tape street street";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    gap: 20px;
+
+  }
+
+  .gallery__item:nth-child(1) {
+    grid-area: sunset;
+  }
+
+  .gallery__item:nth-child(2) {
+    grid-area: icecream;
+  }
+
+  .gallery__item:nth-child(3) {
+    grid-area: tape;
+  }
+
+  .gallery__item:nth-child(5) {
+    grid-area: street;
+    block-size: 310px;
+  }
+
+  .footer {
+    min-block-size: 1024px;
+  }
+
+  .footer__title {
+    /* font-size: 10rem; */
+  }
+
+}
