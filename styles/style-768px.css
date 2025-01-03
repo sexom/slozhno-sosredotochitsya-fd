@@ -53,10 +53,9 @@
   /* title */
 
   .header__title {
-    word-spacing: 10px;
     letter-spacing: 3px;
     margin-inline-start: -10px;
-    font-size: 7rem;
+    font-size: 7.2rem;
   }
 
   
@@ -161,12 +160,12 @@
   /* gallery */
   
   .gallery {
-    padding-block-start: 28px;
+    padding-block-start: 26px;
   }
 
   .gallery__list {
     padding-block-start: 20px;
-    padding-block-end: 20px;
+    padding-block-end: 22px;
     grid-template-areas: 
     "sunset sunset icecream"
     "tape books icecream"
@@ -183,18 +182,22 @@
 
   .gallery__item:nth-child(2) {
     grid-area: icecream;
+    min-block-size: 442px;
   }
 
   .gallery__item:nth-child(3) {
     grid-area: tape;
+    min-block-size: 565px;
   }
+
+
 
   .gallery__item:nth-child(5) {
     grid-area: street;
-    block-size: 310px;
+    min-block-size: 310px;
   }
 
   .footer {
-    min-block-size: 1024px;
+    min-block-size: 1020px;
   }
 }

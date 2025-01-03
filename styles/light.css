@@ -22,7 +22,7 @@
   --menu-item-hover-color: #ada5a6;
   --menu-item-focus-color: #000;
   --link-focus-color: #000;
-  --font-title-color: #ffc2e6;
+  --font-title-color: #ffc1e6;
   --cover-image: url(../images/cover-image-light.png);
 
 }
@@ -42,7 +42,7 @@
     --menu-item-hover-color: #ada5a6;
     --menu-item-focus-color: #000;
     --link-focus-color: #000;
-    --font-title-color: #ffc2e6;
+    --font-title-color: #ffc1e6;
     --cover-image: url(../images/cover-image-light.png);
   }
 }

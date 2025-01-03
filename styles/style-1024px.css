@@ -131,4 +131,8 @@
   .footer {
     min-block-size: 774px;
   }
+
+  .footer__title {
+    font-size: 9.8rem;
+  }
 }
