@@ -179,6 +179,10 @@
   padding-block-end: 32px;
 }
 
+.faq__title {
+  color: var(--font-color)
+}
+
 .faq__text {
   display: inline-block;
   color: var(--faq-text-color);
@@ -233,14 +237,14 @@
 }
 
 
-.faq__subtitle {
-  background-color: var(--accent-color);
-  font-weight: 400;
-  color: var(--bg-color);
-  line-height: 23.4px;
-}
 
 */
+
+.faq__subtitle {
+  background-color: var(--accent-color);
+  color: var(--font-color);
+  line-height: 23.4px;
+}
 
 .faq__section:nth-of-type(3)
 .faq__question {
@@ -263,7 +267,7 @@
 
 .gallery__title {
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--font-title-color);
   font-weight: bold;
   line-height: 23.4px;
   font-size: 18px;

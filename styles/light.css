@@ -13,6 +13,7 @@
   --active-color: #353430;
   --menu-color: #353430;
   --bg-color: #fff1f7;
+  --faq-text-color: #353430;
   --font-color: #353430;
   --title-decor-font: #353430;
   --menu-item-hover-color: #ada5a6;
@@ -20,6 +21,7 @@
   --link-focus-color: #000;
   --font-title-color: #ffc2e6;
   --cover-image: url(../images/cover-image-light.png);
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,7 +30,9 @@
     --active-color: #353430;
     --menu-color: #353430;
     --bg-color: #fff1f7;
+    --faq-text-color: #353430;
     --font-color: #353430;
+    --title-decor-font: #353430;
     --menu-item-hover-color: #ada5a6;
     --menu-item-focus-color: #000;
     --link-focus-color: #000;

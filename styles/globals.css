@@ -44,8 +44,6 @@ a {
 .title-decor {
   background-color: var(--accent-color);
   line-height: var(--font-lh-paragraph);
-  font-weight: bold;
   color: var(--title-decor-font);
   font-size: 18px;
-  font-weight: bold;
 }
