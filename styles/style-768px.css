@@ -38,8 +38,12 @@
   
   .header__theme-menu {
     block-size: 265px;
-    padding-inline-end: 10px;
+    padding-inline-end: 20px;
   }
+
+.header__theme-menu-button {
+  inline-size: 70px;
+}
 
   .header__theme-menu-item:last-child {
     margin-block-start: -2px;

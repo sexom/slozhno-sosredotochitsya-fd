@@ -39,7 +39,7 @@
 }
 
 .decorated-zone::after {
-  border: 1px solid var( --accent-color);
+  border: 1px solid var(--decoration-color);
   border-bottom: transparent;
   border-left: transparent;
   top: 10px;
@@ -47,7 +47,7 @@
 }
 
 .decorated-zone::before {
-  border: 1px solid var( --accent-color);
+  border: 1px solid var(--decoration-color);
   border-top: transparent;
   border-right: transparent;
   bottom: 10px;
@@ -60,6 +60,7 @@
 }
 
 .header__decoration::after {
+  display: var(--display_header__decoration);
   content: '';
   position: absolute;
   right: 20px;
@@ -72,6 +73,7 @@
 }
 
 .header__decoration::before {
+  display: var(--display_header__decoration);
   content: 'REC';
   color: var(--accent-color);
   font-size: 18px;
@@ -147,9 +149,8 @@
 
 /* Сабтайтл */
 
-
-
 .header__subtitle-question {
+  font-weight: bold;
   display: grid;
   margin-inline-end: 10px;  
   margin-block-end: 66px;
@@ -205,7 +206,7 @@
 }
 
 .faq__question {
-  color: var(--accent-color);
+  color: var(--question-color);
   font-size: 12px;
   font-weight: bold;
   line-height: 23.4px;
