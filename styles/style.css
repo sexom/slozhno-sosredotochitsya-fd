@@ -8,7 +8,7 @@
   font-weight: var(--font-weight-paragraph);
   background-color: var(--bg-color);
   background-image: var(--cover-image);
-  padding-inline: var(--padding-body);
+  /* padding-inline: var(--padding-body); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -20,7 +20,7 @@
   grid-template-rows: auto auto auto;
   position: relative;
   container-type: inline-size;
-  padding-inline: 10px;
+  padding-inline-start: 10px;
   min-inline-size: 375px;
 }
 
@@ -54,13 +54,8 @@
   left: 10px;
 }
 
+
 .header__decoration {
-  display: flex;
-  justify-content: flex-end;
-  padding-inline-end: 30px;
-  padding-block-start: 12px;
-  text-transform: uppercase;
-  color: var(--accent-color);
   block-size: 73px;
 }
 
@@ -78,10 +73,32 @@
 
 .header__decoration::before {
   content: 'REC';
+  color: var(--accent-color);
+  font-size: 18px;
+  position: absolute;
+  right: 38px;
+  top: 12px;
+
+}
+
+ /* .header__decoration::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 7px 4px var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.header__decoration::before {
+  content: 'REC';
   position: absolute;
   right: 40px;
   top: 10px;
-}
+}  */
 
   /* Меню */
 
@@ -89,13 +106,14 @@
   display: grid;
   justify-content: flex-end;
   color: var(--menu-color);
-  block-size: 170px;
+  block-size: 166px;
+  padding-inline: 20px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 11px;
   padding-inline-start: 13px;
 }
 
@@ -104,8 +122,6 @@
   background-color: transparent;
   border: none;
   outline: none;
-  padding-inline: 13px;
-  letter-spacing: 1px;
 }
 
 .header__theme-menu-button:last-child {
@@ -114,6 +130,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--active-color);
+  pointer-events: none
 }
 
   /* Тайтл */
@@ -125,15 +142,17 @@
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: var(--font-lh-h1);
-  block-size: 243px;
+  block-size: 246px;
 }
 
 /* Сабтайтл */
 
+
+
 .header__subtitle-question {
   display: grid;
+  margin-inline-end: 10px;  
   margin-block-end: 66px;
-  padding-inline-end: 10px;
   line-height: var(--font-line-height);
   background-color: var(--accent-color);
 }
@@ -148,7 +167,9 @@
   padding-block-start: 40px;
   display: flex;
   flex-direction: column;
-  padding-inline: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+
   /* gap: 47px; */
 }
 
@@ -158,15 +179,37 @@
   padding-block-end: 32px;
 }
 
+.faq__text {
+  display: inline-block;
+  color: var(--faq-text-color);
+  line-height: 23.4px;
+  padding-block: 10px 20px;
+}
+
+/* .text-wrap {
+  display: inline-block;
+  color: var(--faq-text-color);
+  min-inline-size: 350px;
+  word-wrap: break-word;
+  white-space: normal;
+} */
+
+
+
+.faq__section:nth-of-type(2) {
+  margin-block: -3px;
+}
+
 .faq__question {
   color: var(--accent-color);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   line-height: 23.4px;
   block-size: 68px;
+  inline-size: 350px;
 }
 
-.faq__section:nth-of-type(2)
+/* .faq__section:nth-of-type(2)
 .faq__question:nth-child(1) {
   font-size: 13px;
   margin-block: -5px;
@@ -181,7 +224,7 @@
 .faq__question:nth-child(1) {
   font-size: 13px;
   margin-block: -5px;
-  block-size: 97px;
+  block-size: 1007px;
 }
 
 .faq__section:nth-of-type(3)
@@ -189,27 +232,19 @@
   word-spacing: 0;
 }
 
-.faq__section:nth-of-type(3)
-.faq__answer {
-  margin-block-end: -1px;
-}
-
-
-.faq__title {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
-  font-size: 20px;
-  line-height: 23.4px;
-  font-weight: bold;
-  word-spacing: 6px;
-}
 
 .faq__subtitle {
   background-color: var(--accent-color);
   font-weight: 400;
   color: var(--bg-color);
-  letter-spacing: 1px;
   line-height: 23.4px;
+}
+
+*/
+
+.faq__section:nth-of-type(3)
+.faq__question {
+  margin-block-end: 22px;
 }
 
 .faq__answer:nth-child(2)
@@ -217,12 +252,6 @@
   margin-top: 20px;
 }
 
-.faq__text {
-  color: var(--font-color);
-  line-height: 23.4px;
-  letter-spacing: 1px;
-  padding-block: 10px 21px;
-}
 
 .letter_spacing {
   word-spacing: 4px;
@@ -237,8 +266,7 @@
   color: var(--bg-color);
   font-weight: bold;
   line-height: 23.4px;
-  font-size: 20px;
-  margin-block-start: -4px;
+  font-size: 18px;
 }
 
 .gallery__list {
@@ -265,13 +293,12 @@
   display: grid;
   grid-row: 1fr 1fr;
   justify-content: center;
-  margin-block-start: 40px ;
-  
+  margin-block-start: 40px;
 }
 
 .footer__title {
   grid-row: 2;
-  font-size: clamp(8rem, 0rem + 16.667vw, 15rem);
+  font-size: clamp(7.2rem, 3.771rem + 9.143vw, 12rem);
   color: var(--accent-color);
 }
 

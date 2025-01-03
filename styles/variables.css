@@ -16,12 +16,12 @@
   --font-lh-decoration: 1.56rem;
   
   --accent-color: #FF0070; 
-  --active-color: #FF0070;
   --menu-color: #FF0070;
   --bg-color: #000028;
-  --font-color: #F1B2CE;
+  --faq-text-color: #F1B2CE;
+  --title-decor-font: #000028;
+  --font-color: #353430;
   --menu-item-hover-color: #660045;
-  --menu-item-focus-color: #660045;
   --link-focus-color: #fff;
   --font-title-color: #DB00FF;
   --cover-image: url(../images/cover-image-dark.png);
