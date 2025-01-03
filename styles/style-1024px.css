@@ -10,7 +10,7 @@
     justify-content: center;
     grid-row: 1;
     padding-block-start: 18px;
-    padding-inline-end: 45px;
+    padding-inline-end: 26px;
     block-size: 130px;
   }
 
@@ -100,7 +100,7 @@
 
   .faq__section:nth-child(3){
     display: grid;
-    grid-template-columns: 0.52fr 1fr;
+    grid-template-columns: 0.50fr 1fr;
   }
 
   .faq__section:nth-child(3)
@@ -111,7 +111,7 @@
 
   .faq__section:nth-child(3)
   .faq__title {
-    margin-block-start: -6px;
+    margin-block-start: -5px;
   }
 
   /* gallery */
@@ -129,10 +129,13 @@
   /* footer */
 
   .footer {
-    min-block-size: 774px;
+    margin-block-start: 60px;
+    block-size: 768px;
   }
+  
 
   .footer__title {
     font-size: 9.8rem;
+    padding-block-start: 282px;
   }
 }

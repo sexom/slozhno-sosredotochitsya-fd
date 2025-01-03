@@ -165,14 +165,13 @@
 
   .gallery__list {
     padding-block-start: 20px;
-    padding-block-end: 22px;
     grid-template-areas: 
     "sunset sunset icecream"
     "tape books icecream"
     "tape street street";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, min-content);
-    gap: 19px;
+    gap: 20px;
 
   }
 
@@ -197,7 +196,8 @@
     min-block-size: 310px;
   }
 
-  .footer {
-    min-block-size: 1020px;
+  .footer__title {
+    block-size: 1000px;
+    padding-top: 400px;
   }
 }

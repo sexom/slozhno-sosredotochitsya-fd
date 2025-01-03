@@ -15,14 +15,16 @@
   --font-size-decoration: 1.125rem;
   --font-lh-decoration: 1.56rem;
 
+  --active-color: #FF0070;
   --question-color: #FF0070;
   --decoration-color: #FF0070;
   --accent-color: #FF0070; 
   --menu-color: #FF0070;
   --bg-color: #000028;
   --faq-text-color: #F1B2CE;
+  --faq-tittle-color: #000028;
   --title-decor-font: #000028;
-  --font-color: #353430;
+  --font-color: #F1B2CE;
   --menu-item-hover-color: #660045;
   --link-focus-color: #fff;
   --font-title-color: #DB00FF;
