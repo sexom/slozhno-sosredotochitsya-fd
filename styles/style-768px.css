@@ -118,7 +118,7 @@
   }
 
   .faq__section:nth-of-type(2) {
-    padding-block-start: 30px;
+    padding-block-start: 25px;
   }
 
   .faq__section:nth-of-type(2)
@@ -128,7 +128,7 @@
 
   .faq__section:nth-of-type(2)
   .faq__answer:nth-child(1) {
-    margin-block-start: 20px;
+    margin-block-end: 10px;
   }
 
   .faq__section:nth-of-type(2)
@@ -138,13 +138,13 @@
 
   .faq__section:nth-of-type(2)
   .faq__answer:nth-child(3) {
-    margin-block-start: -4px;
+    margin-block-start: 2px;
   }
 
   .faq__section:nth-child(3){
     display: grid;
     grid-template-columns: 0.55fr 1fr;
-    padding-block-start: 35px;
+    padding-block-start: 30px;
   }
 
   .faq__section:nth-child(3)
@@ -169,10 +169,12 @@
     "sunset sunset icecream"
     "tape books icecream"
     "tape street street";
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, min-content);
-    gap: 20px;
-
+    gap: 20px; */
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 10px;
   }
 
   .gallery__item:nth-child(1) {
@@ -181,23 +183,25 @@
 
   .gallery__item:nth-child(2) {
     grid-area: icecream;
-    min-block-size: 442px;
+    /* min-block-size: 442px */
   }
 
   .gallery__item:nth-child(3) {
     grid-area: tape;
-    min-block-size: 565px;
+    /* min-block-size: 565px; */
   }
-
-
 
   .gallery__item:nth-child(5) {
     grid-area: street;
-    min-block-size: 310px;
+    min-block-size: 310px; 
   }
 
-  .footer__title {
-    block-size: 1000px;
-    padding-top: 400px;
+  .footer {
+    margin-block-start: 55px;
+    block-size: 1025px;
+    display: grid;
+    grid-row: 1fr 1fr;
+    justify-content: center;
   }
+
 }

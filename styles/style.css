@@ -204,24 +204,17 @@
   line-height: 23.4px;
 }
 
-.faq__section:nth-of-type(3)
-.faq__question {
-  margin-block-end: 22px;
-}
 
 .faq__answer:nth-child(2)
 .faq__subtitle {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
-
-.letter_spacing {
-  word-spacing: 4px;
+.faq__section:nth-of-type(3)
+.faq__question {
+  margin-block-end: 21px;
 }
 
-.faq:nth-child(2) {
-  margin-top: -2px;
-}
 
 .gallery__title {
   background-color: var(--accent-color);
