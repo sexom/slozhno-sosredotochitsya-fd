@@ -175,10 +175,7 @@
     grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(auto-fill, 1fr);
     box-sizing: border-box;
-  }
-
-  .gallery__item {
-
+    gap: 14px;
   }
 
   .gallery__item:nth-child(1) {
@@ -192,10 +189,7 @@
 
   .gallery__item:nth-child(3) {
     grid-area: tape;
-    /* padding-top: 6px;
-    padding-right: 19px;
-    min-block-size: 570px; */
-    /* min-block-size: 565px; */
+
   }
 
   .gallery__item:nth-child(5) {
@@ -203,11 +197,10 @@
   }
 
   .footer {
-    margin-block-start: 55px;
-    block-size: 1025px;
+    margin-block-start: 52px;
+    block-size: 1023px;
     display: grid;
-    grid-row: 1fr 1fr;
+    grid-row: 1fr;
     justify-content: center;
   }
-
 }
