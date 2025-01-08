@@ -174,7 +174,11 @@
     gap: 20px; */
     grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(auto-fill, 1fr);
-    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .gallery__item {
+
   }
 
   .gallery__item:nth-child(1) {
@@ -188,12 +192,14 @@
 
   .gallery__item:nth-child(3) {
     grid-area: tape;
+    /* padding-top: 6px;
+    padding-right: 19px;
+    min-block-size: 570px; */
     /* min-block-size: 565px; */
   }
 
   .gallery__item:nth-child(5) {
     grid-area: street;
-    min-block-size: 310px; 
   }
 
   .footer {
