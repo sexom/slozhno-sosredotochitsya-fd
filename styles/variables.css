@@ -26,7 +26,8 @@
   --title-decor-font: #000028;
   --font-color: #F1B2CE;
   --menu-item-hover-color: #660045;
-  --link-focus-color: #fff;
+  --menu-item-focus-color: #FF0070;
+  --link-focus-color: #F1B2CE;
   --font-title-color: #DB00FF;
   --cover-image: url(../images/cover-image-dark.png);
 
