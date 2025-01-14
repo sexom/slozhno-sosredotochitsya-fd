@@ -429,18 +429,19 @@
   }
 
   .gallery__list {
-    padding-block-start: 20px;
+    /* padding-block-start: 20px; */
+    padding-block-start: 17px;
     grid-template-areas: 
     "sunset sunset icecream"
     "tape books icecream"
     "tape street street";
     grid-template-rows: repeat(3, min-content);
-    gap: 20px;
     grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(auto-fill, 1fr);
     box-sizing: border-box;
-    column-gap: 13px;
-    row-gap: 10px;
+    /* row-gap: 12px; */
+    row-gap: 15px;
+    column-gap: 20px;
   }
 
   .gallery__item:nth-child(1) {
@@ -586,7 +587,12 @@
   /* gallery */
   
   .gallery {
-    padding-block-start: 10px;
+    padding-block-start: 60px;
+  }
+
+  .gallery__list {
+    row-gap: 15px;
+    column-gap: 20px;
   }
 
   .gallery__item:nth-child(5) {
