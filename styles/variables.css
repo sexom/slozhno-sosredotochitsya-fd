@@ -9,11 +9,13 @@
   --font-size-paragraph: 18px;
   --font-weight-paragraph: 1rem;
   --font-line-height: 23.4px;
-  --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-title-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --font-lh-h1: clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem);
   --font-lh-main: 1,46rem;
   --font-size-decoration: 1.125rem;
   --font-lh-decoration: 1.56rem;
+  --decorated-zone-padding-bottom: 20px;
 
   --active-color: #FF0070;
   --question-color: #FF0070;
@@ -31,5 +33,4 @@
   --font-title-color: #DB00FF;
   --cover-image: url(../images/cover-image-dark.png);
 
-  --decorated-zone-padding-bottom: 20px;
 }
