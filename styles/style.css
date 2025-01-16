@@ -128,6 +128,8 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: var(--font-size-title-mobile);
   line-height: var(--font-lh-h1);
+  padding-block-end: 10px;
+
 }
 
 
@@ -293,9 +295,7 @@
   }
   
    .header__decoration {
-    padding-block-start: 21px;
-    padding-inline-end: 48px;
-    padding-block-start: 190px;
+    padding-block-start: 30px;
   }
   
   .header__decoration::after {
@@ -312,29 +312,35 @@
   
   .header__theme-menu {
     justify-content: end;
-    align-self: center;
-    margin-block-start: 120px;
-    padding-block-end: 165px;
-    padding-inline-end: 10px;
+    align-self: flex-end;
+    padding-block-start: 48px;
+    padding-inline-end: 10px ;
   }
 
   .header__theme-menu-item:last-child {
     margin-block-start: -2px;
   }
 
+  .header__decoration {
+    padding-block-start: 40px
+  }
+
   /* title */
 
   .header__title {
+    padding-block-start: 24px;
     font-size: var(--font-size-title-desktop);
     justify-self: start;
+    align-self: flex-end;
     margin-inline-start: -10px;
-    padding-block-end: 155px;
+     padding-block-end: 10px;
   }
   
   /* subtitle */
   
   .header__subtitle {
     justify-self: end;
+    align-self: flex-end;
     max-inline-size: 364px;
     margin-inline-end: 10px;
   }
@@ -454,10 +460,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
-    grid-row: 1;
-    margin-block-start: -24px;
-    padding-block-start: 42px;
-    padding-block-end: 277px;
+    padding-block-start: 18px;
   }
   
   .header__theme-menu-list {
@@ -471,13 +474,15 @@
   /* title */
   
   .header__title {
-    padding-block-end: 10px;
+    padding-block-start: 55px;
   }
 
   .header__subtitle {
-    margin-block-start: 100px;
     max-inline-size: 491px;
+  }
 
+  .header__decoration {
+    padding-block-start: 25px;
   }
 
   /* faq */
